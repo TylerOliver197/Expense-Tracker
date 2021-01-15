@@ -1,0 +1,26 @@
+<html lang="en">
+ <head>
+  <title id="title">Expense Tracker</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Expense Tracker">
+  <meta name="author" content="Tyler Oliver">
+ </head>
+
+ <body>
+  <header>
+   <h1>Expense Tracker</h1>
+   <p>Fill out the information and click submit and I will construct a nice table of your expenses!</p>
+  </header>
+   <div>
+    <label>Name</label>
+    <input id="nameInput" type="text"></input><br>
+    <label>Date</label>
+    <input id="dateInput" type="date"></input>
+    <label>Amount</label>
+    <input id="costInput" type="number"></input>
+    <button type="submit" onclick="createTable()">Submit</button>
+  </div>
+   <table id="myTable">
+   </table>
+ </body>
+</html>
