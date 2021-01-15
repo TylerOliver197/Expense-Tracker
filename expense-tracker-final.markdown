@@ -1,7 +1,3 @@
-Expense Tracker Final
----------------------
+Expense Tracker
 
-
-A [Pen](https://codepen.io/redjustice197/pen/OJRzPxa) by [RedJustice197](https://codepen.io/redjustice197) on [CodePen](https://codepen.io).
-
-[License](https://codepen.io/redjustice197/pen/OJRzPxa/license).
+An app that creates a table of expenses based on the users input
