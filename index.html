@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-<link href="style.css" rel="stylesheet">
-
-<html lang="en">
+<html lang="en-us">
  <head>
   <title id="title">Expense Tracker</title>
   <meta charset="utf-8">
@@ -10,22 +8,46 @@
   <meta name="author" content="Tyler Oliver">
  </head>
 
+  
  <body>
+   
+  <!-- Create the header -->
   <header>
    <h1>Expense Tracker</h1>
    <p>Fill out the information and click submit and I will construct a nice table of your expenses!</p>
   </header>
-   <div>
-    <label>Name</label>
-    <input id="nameInput" type="text"></input><br>
-    <label>Date</label>
-    <input id="dateInput" type="date"></input>
-    <label>Amount</label>
-    <input id="costInput" type="number"></input>
-    <button type="submit" onclick="createTable()">Submit</button>
-  </div>
+   
+   <!-- Create the form -->
+   <div id="input-div">
+   <div id="input-group">
+    <label id="name-label" for="nameInput">Name</label><br>
+    <input 
+           id="nameInput" 
+           type="text" 
+           placeholder="Enter your name"
+           class="input-control"><br>
+     </div>
+     <div id="input-group">
+    <label id="date-label" for="dateInput">Date</label><br>
+    <input 
+           id="dateInput" 
+           type="date"
+           class="input-control"><br>
+     </div>
+     <div id="input-group">
+    <label id="cost-label" for="costInput">Amount</label><br>
+    <input 
+           id="costInput" 
+           type="number"
+           placeholder="Enter the cost"
+           class="input-control"><br>
+     </div>
+    <button id="submit-button" type="submit" onclick="createTable()">Submit</button>
+   </div>
+
    <table id="myTable">
    </table>
-  <script src="script.js"></script>
+     <script src="script.js"></script>
  </body>
 </html>
+
