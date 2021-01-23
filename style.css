@@ -61,6 +61,7 @@ header {
   border-radius: 0.25rem;
   width: 33%;
   margin: auto;
+  border: 1px solid black;
 }
 
 .input-group {
@@ -106,7 +107,7 @@ label {
   position: relative;
   top: 20px;
   border-collapse: collapse;
-  width: 33%;
+  width: 33%; 
 }
 
 #myTable th, #myTable td { 
@@ -116,12 +117,21 @@ label {
   color: black;
 }
 
-
-#myTable tr{
+#myTable td {
   background-color: white;
 }
 
 #myTable th {
   background-color: var(--color-3);
   color: white;
+}
+
+.close {
+  background-color: white;
+  margin: 0.5rem auto 0.5rem auto;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: var(--color-2);
 }
